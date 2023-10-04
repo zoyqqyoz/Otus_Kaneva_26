@@ -8,7 +8,7 @@
 
 
 
-Перед тем, как запускать предложенный Vagrantfile, нужно создать структуру файлов для деплоя в папке project:
+Перед тем, как запускать предложенный [Vagrantfile](https://github.com/zoyqqyoz/Otus_Kaneva_26/blob/master/project/Vagrantfile), нужно создать структуру файлов для деплоя в папке project:
 
 ```
 
@@ -30,14 +30,14 @@
 
 ```
 
-docker-compose.yml описывает, какие контейнеры нам потребуется создать и их конфигурацию
-nginx.conf описывает конфигурацию nginx
-test.js представляет сосбой скрипт, задача которого выводить надпись:  Hello from node js server на js сервере
-prov.yml - разворачивает через Ansible хост DynamicWeb, устанавливает на него docker и docker-compose, копирует файлы с директории project в директорию /home/vagrant
-Dockerfile - файл докера
-manage.py - исходный код Django приложения
-settings.py, urls.py, wsgi.py - настройки Django приложения
-requirements.txt - требования к Django
+[docker-compose.yml](https://github.com/zoyqqyoz/Otus_Kaneva_26/blob/master/project/docker-compose.yml) описывает, какие контейнеры нам потребуется создать и их конфигурацию
+[nginx.conf](https://github.com/zoyqqyoz/Otus_Kaneva_26/blob/master/project/nginx-conf/nginx.conf) описывает конфигурацию nginx
+[test.js](https://github.com/zoyqqyoz/Otus_Kaneva_26/blob/master/project/node/test.js) представляет сосбой скрипт, задача которого выводить надпись:  Hello from node js server на js сервере
+[prov.yml](https://github.com/zoyqqyoz/Otus_Kaneva_26/blob/master/project/prov.yml) - разворачивает через Ansible хост DynamicWeb, устанавливает на него docker и docker-compose, копирует файлы с директории project в директорию /home/vagrant
+[Dockerfile](https://github.com/zoyqqyoz/Otus_Kaneva_26/blob/master/project/python/Dockerfile) - файл докера
+[manage.py](https://github.com/zoyqqyoz/Otus_Kaneva_26/blob/master/project/python/manage.py) - исходный код Django приложения
+[settings.py, urls.py, wsgi.py](https://github.com/zoyqqyoz/Otus_Kaneva_26/tree/master/project/python/mysite) - настройки Django приложения
+[requirements.txt](https://github.com/zoyqqyoz/Otus_Kaneva_26/blob/master/project/python/requirements.txt) - требования к Django
 
 После этого запускаем создание и деплой ВМ DynamicWeb командой vagrant up:
 
@@ -115,6 +115,6 @@ http:/localhost:8082
 http:/localhost:8083
 ```
 
-Результаы представлены на скриншотах.
+Результаы представлены на [скриншотах](https://github.com/zoyqqyoz/Otus_Kaneva_26/tree/master/project/screens).
 
 
